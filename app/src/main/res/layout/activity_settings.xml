@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/blue_background">
+
+    <!-- Difficulty Level Spinner -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Difficulty Level"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="50dp"
+        android:textAlignment="center"
+        android:textColor="@color/yellow"
+        android:fontFamily="@font/aclonica_regular"/>
+
+    <Spinner
+        android:id="@+id/spinnerDifficulty"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="120dp"
+        android:popupBackground="@color/white"
+        android:background="@drawable/spinner_background"
+/>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/buttonSave"
+        android:text="Save"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:elevation="4dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="100dp"
+        />
+
+    <!-- Reset Button -->
+    <Button
+        android:id="@+id/buttonReset"
+        android:text="Reset Game"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:elevation="4dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="100dp"
+        />
+</LinearLayout>

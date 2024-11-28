@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/blue_background">
+
+    <TextView
+        android:id="@+id/tic_tac_toe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tic Tac Toe"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginTop="120dp"
+        android:textAlignment="center"
+        android:textColor="@color/yellow"
+        android:fontFamily="@font/aclonica_regular"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:contentDescription="Tic Tac Toe"
+        android:src="@drawable/tic_tac_toe_main_activity"
+        android:id="@+id/imageView"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="200dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/white" />
+
+    <Button
+        android:id="@+id/button_start_game"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Start Game"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/tic_tac_toe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="240dp" />
+
+
+    <!-- Two Player Game Button -->
+    <Button
+        android:id="@+id/createRoomButton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Create Room"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:elevation="4dp"
+        android:layout_marginTop="480dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/joinRoomButton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Join Room"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:elevation="4dp"
+        android:layout_marginTop="550dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+<!--    android:background="@drawable/flat_button"-->
+
+    <!-- View Past Game Button -->
+
+    <Button
+        android:id="@+id/button_past_game"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="500dp"
+        android:text="View Past Games"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tic_tac_toe" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
